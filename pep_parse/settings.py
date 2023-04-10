@@ -3,7 +3,7 @@ from pathlib import Path
 FILENAME = 'status_summary_{}.csv'
 RESULTS_DIR = 'results'
 TIME_FORMAT = '%Y-%m-%d_%H-%M-%S'
-PEP_REG = 'PEP\s(?P<number>\d+)\W+(?P<name>.+)$'
+PEP_REG = 'PEP\\s(?P<number>\\d+)\\W+(?P<name>.+)$'
 BASE_DIR = Path(__file__).parent.parent
 
 FEEDS = {
