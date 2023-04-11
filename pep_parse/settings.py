@@ -2,7 +2,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).parent.parent
 FILENAME = 'status_summary_{}.csv'
-RESULTS_DIR = BASE_DIR / 'results'
+RESULTS = 'results'
 TIME_FORMAT = '%Y-%m-%d_%H-%M-%S'
 PEP_REG = 'PEP\\s(?P<number>\\d+)\\W+(?P<name>.+)$'
 

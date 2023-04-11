@@ -4,8 +4,9 @@ from datetime import datetime as dt
 
 from scrapy.exceptions import DropItem
 
-from pep_parse.settings import (FILENAME, RESULTS_DIR,
-                                TIME_FORMAT)
+from pep_parse.settings import BASE_DIR, FILENAME, RESULTS, TIME_FORMAT
+
+RESULTS_DIR = BASE_DIR / RESULTS
 
 
 class PepParsePipeline:
