@@ -1,10 +1,10 @@
 from pathlib import Path
 
+BASE_DIR = Path(__file__).parent.parent
 FILENAME = 'status_summary_{}.csv'
-RESULTS_DIR = 'results'
+RESULTS_DIR = BASE_DIR / 'results'
 TIME_FORMAT = '%Y-%m-%d_%H-%M-%S'
 PEP_REG = 'PEP\\s(?P<number>\\d+)\\W+(?P<name>.+)$'
-BASE_DIR = Path(__file__).parent.parent
 
 FEEDS = {
     'results/pep_%(time)s.csv': {

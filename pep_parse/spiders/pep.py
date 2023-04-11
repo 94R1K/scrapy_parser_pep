@@ -22,9 +22,4 @@ class PepSpider(scrapy.Spider):
         status = response.css(
             'dt:contains("Status") + dd'
         ).css('abbr::text').get()
-        data = {
-            'number': number,
-            'name': name,
-            'status': status
-        }
-        yield PepParseItem(data)
+        yield PepParseItem(dict(number=number, name=name, status=status))
