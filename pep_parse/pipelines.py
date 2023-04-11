@@ -4,9 +4,7 @@ from datetime import datetime as dt
 
 from scrapy.exceptions import DropItem
 
-from pep_parse.settings import BASE_DIR, FILENAME, RESULTS, TIME_FORMAT
-
-RESULTS_DIR = BASE_DIR / RESULTS
+from pep_parse.settings import BASE_DIR, FILENAME, TIME_FORMAT, RESULTS
 
 
 class PepParsePipeline:
@@ -21,7 +19,8 @@ class PepParsePipeline:
         return item
 
     def close_spider(self, spider):
-        file_path = RESULTS_DIR / FILENAME.format(self.now_time)
+        results_dir = BASE_DIR / RESULTS
+        file_path = results_dir / FILENAME.format(self.now_time)
         file = csv.writer(open(file_path, 'w'))
         file.writerow(['Статус', 'Количество'])
         self.total['Total'] = sum(self.total.values())
