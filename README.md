@@ -34,5 +34,11 @@ scrapy crawl pep
 сколько найдено документов в каждом статусе (``Status``, ``Quantity``). 
 В последней строке этого файла в колонке ``Total`` выводится общее количество всех документов.
 
-### Автор
-- [Лошкарев Ярослав](https://vk.com/yalluv "VK")
+# Об авторе
+Лошкарев Ярослав Эдуардович \
+Python-разработчик (Backend) \
+Россия, г. Москва \
+E-mail: real-man228@yandex.ru 
+
+[![VK](https://img.shields.io/badge/Вконтакте-%232E87FB.svg?&style=for-the-badge&logo=vk&logoColor=white)](https://vk.com/yalluv)
+[![TG](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/yallluv)
